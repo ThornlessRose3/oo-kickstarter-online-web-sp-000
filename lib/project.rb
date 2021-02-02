@@ -16,7 +16,7 @@ class Project
     if !(@backers.include?(self))
       @backers << backer
     end
-    backer.backed_projects.add_project(self)
+    backer.add_project(self)
   end
   
 end
