@@ -13,8 +13,8 @@ class Backer
   end
   
   def back_project(project)
-    if project.backer != self
-      project.backer = self
+    if project.backers != self
+      project.backers = self
     end
     @backed_projects << project
   end
