@@ -12,7 +12,7 @@ class Project
     @backers.dup.freeze
   end
   
-  def self.add_backer(backer)
+  def add_backer(backer)
     #if !(@backers.include?(self))
      # @backers << self
   #  end
