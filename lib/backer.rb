@@ -1,10 +1,10 @@
 class Backer
   
-  attr_accessor :title
+  attr_accessor :name
   
   
-  def initialize(title)
-    @title = tile
+  def initialize(name)
+    @name = name
     @backed_projects = []
   end
   
@@ -16,6 +16,7 @@ class Backer
     if project.backer != self
       project.backer = self
     end
-    @backed_projects << project    
+    @backed_projects << project
+  end
   
 end
